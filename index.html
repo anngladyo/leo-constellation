@@ -47,6 +47,19 @@
     -webkit-font-smoothing: antialiased;
   }
 
+  .bg-space {
+    position: fixed; inset: 0;
+    background-image:
+      radial-gradient(ellipse 120% 80% at 50% 15%, rgba(5,6,15,0.35) 0%, rgba(5,6,15,0.55) 55%, rgba(2,2,8,0.8) 100%),
+      url('assets/space.avif');
+    background-size: cover, cover;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    opacity: 0.6;
+    pointer-events: none;
+    z-index: 0;
+  }
+
   .bg-stars {
     position: fixed; inset: 0;
     background-image:
@@ -618,6 +631,7 @@
   </div>
 </div>
 
+<div class="bg-space"></div>
 <div class="bg-stars"></div>
 <button class="audio-toggle" id="audioToggle" aria-label="Включить или выключить звук">♪</button>
 
